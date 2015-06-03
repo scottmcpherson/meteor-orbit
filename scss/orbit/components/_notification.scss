@@ -1,0 +1,10 @@
+// Can we use foundation's
+// animation classes?
+.notification {
+  opacity: 0;
+  transition: all 0.3s;
+
+  &.fadeIn {
+    opacity: 1;
+  }
+}

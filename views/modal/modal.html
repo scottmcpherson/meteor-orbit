@@ -1,0 +1,21 @@
+<template name="renderModal">
+  <span class="{{class}}">
+    <a class="reveal-modal {{icon}}" id="{{id}}">{{text}}</a>
+  </span>
+</template>
+
+<template name="_modal">
+  <div class="modal-overlay hidden">
+    <aside class="modal is-active {{modalClass}}">
+      {{> Template.dynamic template=this.modal data=getParentData}}
+    </aside>
+  </div>
+</template>
+
+<template name="removeModal">
+  <span class="{{class}}">
+    <a class="dismiss-modal {{icon}}" id="{{id}}">{{text}}</a>
+  </span>
+</template>
+
+

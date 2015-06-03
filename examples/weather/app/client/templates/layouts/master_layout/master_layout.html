@@ -1,0 +1,38 @@
+<template name="MasterLayout">
+
+  {{! Define offCanvas outside of grid-frame}}
+  {{#offCanvas}}
+    <ul>
+      <li>{{> removeOffCanvas text="Close"}}</li>
+    </ul>
+  {{/offCanvas}}
+
+  <div class="grid-frame" style="background:url({{weatherImage}})">
+    <div class="grid-block vertical">
+      <div class="title-bar dark">
+        <div class="center title">{{city}}</div>
+        {{> renderOffCanvas class="left" icon="ion-navicon-round"}}
+        <span class="right"><a href="#" class="notify">Notify</a></span>
+        <!-- {{> renderModal handle="testModal" class="ion-plus-round right" modal="TestModal" modalClass="large"}} -->
+      </div>
+
+      {{> yield}}
+
+      <ul class="icon-top menu-bar dark">
+        <li><a href="{{pathFor 'weather'}}"><i class="ion-ios-partlysunny-outline"></i>Weather</a></li>
+        <li><a href="{{pathFor 'forecast'}}"><i class="ion-ios-timer-outline"></i>Forecast</a></li>
+        <li><a href="{{pathFor 'like'}}"><i class="ion-ios-heart-outline"></i>Like</a></li>
+      </ul>
+    </div>
+  </div>
+
+</template>
+
+<template name="sheet">
+  <p class="ng-scope">Tap to share</p>
+  <ul class="ng-scope">
+    <li><a href="#">Facebook</a></li>
+    <li><a href="#">Twitter</a></li>
+    <li><a href="#">Email</a></li>
+  </ul>
+</template>

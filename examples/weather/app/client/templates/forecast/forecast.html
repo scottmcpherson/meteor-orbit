@@ -1,0 +1,28 @@
+<template name="Forecast">
+  {{#with weather}}
+    <div class="grid-block">
+      <div class="grid-container forecast-container forecast-card">
+        <div class="grid-content forecast-card">
+          {{#each forecast}}
+            <div class="grid-block">
+
+              <div class="grid-content fc-item">
+                {{day}}
+              </div>
+
+              <div class="grid-content fc-item fc-item-icon text-center">
+                <i class="weather-icon {{weatherIcon}}"></i>
+              </div>
+
+              <div class="grid-content fc-item text-right">
+                <i class="ion-ios-arrow-thin-up"></i>&nbsp;{{high}}&nbsp;
+                <i class="ion-ios-arrow-thin-down"></i>&nbsp;{{low}}
+              </div>
+
+            </div>
+          {{/each}}
+        </div>
+      </div>
+    </div>
+  {{/with}}
+</template>

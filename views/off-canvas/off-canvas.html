@@ -1,0 +1,17 @@
+<template name="renderOffCanvas">
+  <span class="{{class}}" id="{{id}}">
+    <a href="#" class="reveal-off-canvas {{icon}}">{{text}}</a>
+  </span>
+</template>
+
+<template name="removeOffCanvas">
+  <a href="#" class="dismiss-off-canvas {{class}} {{icon}}" id="{{id}}">{{text}}</a>
+</template>
+
+<template name="offCanvas">
+  <div class="detached off-canvas hide-for-print {{revealOffCanvasClass}}" id="example-canvas-left" position="left">
+    <div class="grid-content ng-scope">
+      {{> Template.contentBlock}}
+    </div>
+  </div>
+</template>

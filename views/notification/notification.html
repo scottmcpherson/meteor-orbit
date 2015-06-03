@@ -1,0 +1,17 @@
+<template name="_notification">
+  <div class="{{containerClass}} {{position}} {{class}}">
+    <div class="notification success is-active">
+      <a href="#" class="close-button">×</a>
+      {{#if image}}
+      <div class="notification-icon ng-scope">
+        <img src="http://www.clipartbest.com/cliparts/acq/X8R/acqX8RdcM.jpeg">
+      </div>
+      {{/if}}
+      <div class="notification-content">
+        <h1>{{title}}</h1>
+        <p>{{content}}</p>
+      </div>
+    </div>
+  </div>
+</template>
+

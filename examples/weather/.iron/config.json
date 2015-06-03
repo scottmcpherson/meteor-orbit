@@ -1,0 +1,23 @@
+{
+  "engines": {
+    "html": "html",
+    "js": "js",
+    "css": "css"
+  },
+
+  "template": {
+    "html": true,
+    "js": true,
+    "css": false
+  },
+
+  "route": {
+    "controller": true,
+    "template": true
+  },
+
+  "mup": {
+    "development": "/deploy/development",
+    "production": "/deploy/production"
+  }
+}

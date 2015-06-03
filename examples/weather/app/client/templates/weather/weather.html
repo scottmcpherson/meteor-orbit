@@ -1,0 +1,28 @@
+<template name="Weather">
+  {{#with weather}}
+    <div class="vertical grid-block align-center">
+      <div class="grid-container weather-grid-container">
+        <div class="grid-block horizontal">
+
+          <div class="grid-block align-center">
+            <div class="grid-content text-center">
+              <h1>{{temp}} &deg;{{units.temp}}</h1>
+              <span class="high-log">
+                {{currently}}&nbsp;
+                <i class="ion-ios-arrow-thin-up"></i>&nbsp;{{high}}&nbsp;
+                <i class="ion-ios-arrow-thin-down"></i>&nbsp;{{low}}
+              </span>
+            </div>
+          </div>
+
+          <div class="grid-block align-center">
+            <div class="grid-content text-center">
+              <img src="{{image}}">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  {{/with}}
+</template>
