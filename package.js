@@ -14,11 +14,9 @@ Package.onUse(function(api) {
   api.versionsFrom('1.1.0.2');
 
   api.use('iron:router@1.0.7', 'client');
-  api.use('rainhaven:sass@1.0.2', ['client', 'server']);
-  api.imply('rainhaven:sass@1.0.2', ['client', 'server']);
 
-  // api.use('fourseven:scss', ['client', 'server']);
-  // api.imply('fourseven:scss', ['client', 'server']);
+  api.use('fourseven:scss@3.1.1', ['client', 'server']);
+  api.imply('fourseven:scss@3.1.1', ['client', 'server']);
 
   api.use('session');
   api.use('underscore');
