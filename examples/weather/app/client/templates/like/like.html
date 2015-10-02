@@ -1,5 +1,26 @@
 <template name="Like">
   <div class="grid-content">
-    <h1>Like</h1>
+    {{> renderModal
+        handle="testModal"
+        text="Reveal Modal"
+        class="ion-plus-round right button"
+        modal="TestModal"
+        modalClass="large"}}
+  </div>
+</template>
+
+
+<template name="TestModal">
+  <div class="grid-block vertical">
+    <div class="title-bar dark">
+      <div class="center title">Modal</div>
+      {{> removeModal text="Close" class="right"}}
+    </div>
+
+    <div class="grid-content padding">
+      <p>
+        <img src="http://www.cdaresort.com/assets/images/bigpics/golf_bigpic_aerial.jpg">
+      </p>
+    </div>
   </div>
 </template>

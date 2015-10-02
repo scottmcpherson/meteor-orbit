@@ -9,7 +9,7 @@ Template.closestInstance = function(viewName) {
     if (! _.isNull(view) && view.name === viewName)
       return view.templateInstance();
   }
-}
+};
 
 Orbit.View = function (options) {
   options = options || {};
